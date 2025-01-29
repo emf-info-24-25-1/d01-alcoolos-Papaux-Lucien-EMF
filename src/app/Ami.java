@@ -13,18 +13,18 @@ public class Ami {
         return nom;
     }
 
-    public int getBières() {
+    public int getBieres() {
         return nombreDeBiereSupportable;
     }
 
     int biere = 1000;
 
-    public static void boitUneBiere(){
-        if (biere > 0) {
-            biere--; // L'ami boit une bière, donc on décrémente le nombre de bières
-            System.out.println(nom + " a bu une bière ! Il lui reste " + biere + " bières.");
+    public void boitUneBiere() {
+        if (nombreDeBiereSupportable > 0) {
+            nombreDeBiereSupportable--;
+            System.out.println(nom + " a bu une bière !");
         } else {
-            System.out.println(nom + " ne peut plus boire de bières, il est déjà saoul.");
+            System.out.println(nom + " ne peut plus boire de bière, il est déjà saoul !");
         }
     }
 
