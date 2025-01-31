@@ -7,9 +7,9 @@ public class Application {
                 Ami ami2;
                 Ami ami3;
 
-                ami1 = new Ami("Jean", 5);
+                ami1 = new Ami("Jean", 100);
 
-                ami2 = new Ami("Lucien", 20);
+                ami2 = new Ami("Lucien", 10);
 
                 ami3 = new Ami("Gabriel", 1);
 

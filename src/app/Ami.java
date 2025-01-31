@@ -17,13 +17,13 @@ public class Ami {
         return nombreDeBiereSupportable;
     }
 
-    int biere = 1000;
+    
 
-    public void boitUneBiere() {
+    public void boitUneBiere() { //bizzare qu'il n'y ai pas besoin du static
         if (nombreDeBiereSupportable > 0) {
             nombreDeBiereSupportable--;
             System.out.println(nom + " a bu une bière !");
-        } else {
+        } else if (nombreDeBiereSupportable == 0) {
             System.out.println(nom + " ne peut plus boire de bière, il est déjà saoul !");
         }
     }
